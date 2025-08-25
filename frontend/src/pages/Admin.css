@@ -1,0 +1,77 @@
+/* Glassmorphism Container */
+.admin-container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Violet Gradient Headline */
+.admin-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, violet, #7a00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Glassy Table */
+.custom-table {
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  border-collapse: separate;   /* allow spacing */
+  border-spacing: 0 12px;      /* row gap */
+  width: 100%;
+}
+
+/* Custom Border Colors */
+.custom-table th,
+.custom-table td {
+  border: 1px solid rgba(148, 0, 211, 0.5); /* violet border */
+  padding: 12px 18px;
+  vertical-align: middle;
+}
+
+/* Header Style */
+.table-header {
+  background: linear-gradient(90deg, violet, #7a00ff);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+/* Table Rows */
+.custom-table tbody tr {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.custom-table tbody tr:hover {
+  background: rgba(238, 130, 238, 0.15);
+  transform: scale(1.02);
+  box-shadow: 0px 4px 20px rgba(138, 43, 226, 0.4);
+  cursor: pointer;
+}
+
+/* Links Styling */
+.custom-table a {
+  color: #00bfff; /* Sky Blue */
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.custom-table a:hover {
+  color: #1e90ff; /* deeper sky blue */
+  
+}
