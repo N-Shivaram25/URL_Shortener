@@ -1,9 +1,9 @@
 const Url = require("../models/Url");
-// const shortid = require("shortid");
+
 const { nanoid } = require("nanoid");
 
 
-// POST /api/shorten
+
 exports.createShortUrl = async (req, res) => {
   const { longUrl } = req.body;
   if (!longUrl) return res.status(400).json({ message: "URL is required" });
@@ -14,7 +14,7 @@ exports.createShortUrl = async (req, res) => {
     await newUrl.save();
 
    res.json({
-  shortUrl: `http://localhost:5000/${shortCode}`, // ✅ backend domain
+  shortUrl: `http://localhost:5000/${shortCode}`, 
   longUrl
 });
 
@@ -23,7 +23,7 @@ exports.createShortUrl = async (req, res) => {
   }
 };
 
-// GET /:shortCode
+
 exports.redirectUrl = async (req, res) => {
   try {
     const url = await Url.findOne({ shortCode: req.params.shortCode });
@@ -38,7 +38,7 @@ exports.redirectUrl = async (req, res) => {
   }
 };
 
-// GET /api/admin/all (bonus)
+
 exports.getAllUrls = async (req, res) => {
   try {
     const urls = await Url.find();

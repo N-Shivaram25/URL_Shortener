@@ -1,77 +1,99 @@
-/* Glassmorphism Container */
+
 .admin-container {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
+  background: #111;
+  border-radius: 12px;
   padding: 30px;
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid #333;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+  color: #f5f5f5;
+  max-width: 100%;
+  overflow-x: auto; 
 }
 
-/* Violet Gradient Headline */
+
 .admin-title {
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: linear-gradient(90deg, violet, #7a00ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
   margin-bottom: 25px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
-/* Glassy Table */
+
 .custom-table {
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.1);
-  border-collapse: separate;   /* allow spacing */
-  border-spacing: 0 12px;      /* row gap */
+  background: #1a1a1a;
+  border-collapse: collapse;
   width: 100%;
+  color: #f0f0f0;
+  table-layout: auto;
+  word-wrap: break-word;
 }
 
-/* Custom Border Colors */
+
 .custom-table th,
 .custom-table td {
-  border: 1px solid rgba(148, 0, 211, 0.5); /* violet border */
-  padding: 12px 18px;
+  border: 1px solid #333;
+  padding: 12px 15px;
   vertical-align: middle;
-}
-
-/* Header Style */
-.table-header {
-  background: linear-gradient(90deg, violet, #7a00ff);
-  color: white;
-  font-weight: 700;
   text-align: center;
-  letter-spacing: 1px;
-  font-size: 1.1rem;
+  word-break: break-word; 
+  white-space: normal;    
 }
 
-/* Table Rows */
+.table-header {
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+
 .custom-table tbody tr {
-  transition: all 0.3s ease-in-out;
+  background: #1a1a1a;
 }
 
-/* Hover Effect */
 .custom-table tbody tr:hover {
-  background: rgba(238, 130, 238, 0.15);
-  transform: scale(1.02);
-  box-shadow: 0px 4px 20px rgba(138, 43, 226, 0.4);
-  cursor: pointer;
+  background: #1a1a1a;
+  transform: none;
+  box-shadow: none;
+  cursor: default;
 }
 
-/* Links Styling */
+
 .custom-table a {
-  color: #00bfff; /* Sky Blue */
+  color: #4da6ff;
   font-weight: 500;
   text-decoration: none;
-  transition: all 0.3s ease;
+  word-break: break-all; 
 }
 
 .custom-table a:hover {
-  color: #1e90ff; /* deeper sky blue */
-  
+  color: #4da6ff;
+}
+
+
+@media (max-width: 768px) {
+  .custom-table th,
+  .custom-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .admin-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-table {
+    font-size: 0.85rem;
+  }
+
+  .admin-title {
+    font-size: 1.2rem;
+  }
 }

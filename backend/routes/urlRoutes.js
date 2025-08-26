@@ -4,6 +4,6 @@ const { createShortUrl, redirectUrl, getAllUrls } = require("../controllers/urlC
 
 router.post("/shorten", createShortUrl);
 router.get("/admin/all", getAllUrls);
-router.get("/:shortCode", redirectUrl);   // <-- this handles /abc123
+router.get("/:shortCode", redirectUrl);   
 
 module.exports = router;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./Admin.css"; // Import custom styles
+import "./Admin.css"; 
 
 function Admin() {
   const [urls, setUrls] = useState([]);

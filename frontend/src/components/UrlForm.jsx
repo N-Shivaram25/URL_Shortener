@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import "./UrlForm.css"; // custom styling
+import "./UrlForm.css"; 
 
 function UrlForm() {
   const [longUrl, setLongUrl] = useState("");
